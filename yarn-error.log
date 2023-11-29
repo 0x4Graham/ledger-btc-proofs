@@ -1,0 +1,52 @@
+Arguments: 
+  /opt/homebrew/Cellar/node@16/16.20.2/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /opt/homebrew/opt/node@16/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+npm manifest: 
+  {
+    "name": "btcproofs",
+    "version": "1.0.0",
+    "description": "",
+    "source": "src/index.html",
+      "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "parcel build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@ledgerhq/hw-app-btc": "^10.1.0",
+      "@ledgerhq/hw-transport-webhid": "^6.28.0",
+      "@ledgerhq/hw-transport-webusb": "^6.28.0",
+      "@ledgerhq/logs": "^6.12.0",
+      "core-js": "^3.33.3"
+    },
+    "devDependencies": {
+      "parcel": "^2.10.3"
+    },
+    "start": "parcel",
+    "alias": {
+      "@ledgerhq/devices": "@ledgerhq/devices/lib-es"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

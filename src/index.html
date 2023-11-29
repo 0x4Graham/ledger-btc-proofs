@@ -1,0 +1,45 @@
+<!-- <html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My First Embedded App</title>
+    <script type="module" src="main.js"></script>
+  </head>
+  <body id="main">
+    <button id="connectLedger">Connect Ledger</button>
+    <button hidden="true" id="fetch-btc-address">Fetch BTC Address</button>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <button id="connectLedger">Connect my ledger</button>
+        <p id="ledgerStatus"></p>
+        <button id="getBTCAddress" style="display:none;">Get my BTC Address</button>
+        <div id="ledgerAddress"></div>
+        <div id="signMessage" style="display:none;">
+            <h3>Sign Message</h3>
+            <input type="text" id="message" value="I am the owner of this key" readonly>
+            <button id="signBtn">Sign Message</button>
+            <input id="signedMessage">
+            <button id="verifySignature" style="display: none;">Verify Signature</button>
+        </div>
+        <div id="celebration" style="display:none;">
+            <!-- Celebration animation will go here -->
+            <p>Congratulations! Message Verified!</p>
+        </div>
+        <div id="fail" style="display:none;">
+            <!-- Celebration animation will go here -->
+            <p>BOOOO! Message signed incorrectly!</p>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

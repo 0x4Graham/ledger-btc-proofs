@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  max-width: 100%;
+  margin: auto;
+}
+
+div {
+  width: 100%;
+}
+
+button {
+  margin: 10px auto;
+  padding: 10px 20px;
+  display: block;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
